@@ -2,7 +2,7 @@
 '''The UCB1-Uniforme policy.
 Reference = Bandits with Side Observations [GARCELON Evrard]'''
 
-__author__ = "Garcleon, Evrard"
+__author__ = "Garcelon, Evrard"
 
 import numpy as np 
 import random
