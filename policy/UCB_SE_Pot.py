@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
-'''The UCB-SE policy.
+'''The UCB-SE-Potentiel policy. A mix between the UCB-SE policy and the UCB1-Potential policy. That is to say that instead of choosing uniformly over the set of active arms the algorithm 
+selects Jt thanks a non-unifomre probabiliy distribution over this active set.
 Reference = Bandits with Side Observations [GARCELON Evrard]'''
 
-__author__ = "Garcleon, Evrard"
+__author__ = "Garcelon, Evrard"
 
 import numpy as np 
 from numpy.random import choice
