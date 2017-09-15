@@ -23,12 +23,12 @@ class Evaluation():
         for k in range(nbRepetitions): 
             if nbRepetitions < 10 or k % (nbRepetitions/10)==0:
                 print(k)
-            result = env.play(pol, epsilon, T)
+            result = env.play(self.pol, self.epsilon, self.T)
             self.nbPulls[k,:] = result.getNbPulls()
-            self.regret[k,:] = result.regret[tsav]
+            self.regret[k,:] = result.regret[self.tsav]
             
     def meanNbDraws(self):
-        return np.mean(self.nbPulls ,0) 
+        return np.mean(self.nbPulls ,axis = 0) 
 
     def meanRegret(self):
         return np.mean(self.regret,axis=0)

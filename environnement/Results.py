@@ -26,6 +26,6 @@ class Result:
             nbPulls[choice] += 1
         return nbPulls
     
-    def getRegret(self, bestExpectation):
+    def getRegret(self):
         return self.regret
     
